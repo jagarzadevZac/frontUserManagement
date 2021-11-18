@@ -1,0 +1,21 @@
+<div class="container">
+  <p>Add user</p>
+  <div class="col-sm-6">
+    <form >
+      <div class="mb-3">
+        <label for="firstName">First name</label>
+        <input [(ngModel)]="person.firstName" type="text" class="form-control" name="firstName">
+      </div>
+      <div class="mb-3">
+        <label for="lastName">Last name</label>
+        <input [(ngModel)]="person.lastName" type="text" class="form-control" name="lastName">
+      </div>
+      <div class="mb-3">
+        <label for="email">Email</label>
+        <input [(ngModel)]="person.email" type="text" class="form-control" name="email">
+      </div>
+      <button type="button" class="btn btn-secondary" (click)="updateUser()">Submit</button>
+    </form>
+
+  </div>
+</div>
